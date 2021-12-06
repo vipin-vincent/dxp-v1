@@ -32,7 +32,7 @@ const BrowseForms: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Forms | Material Kit Pro
+          Browse: Forms | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

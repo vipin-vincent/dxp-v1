@@ -18,7 +18,7 @@ const BrowseColors: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Colors | Material Kit Pro
+          Browse: Colors | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

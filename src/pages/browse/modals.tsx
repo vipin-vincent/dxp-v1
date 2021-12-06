@@ -28,7 +28,7 @@ export const BrowseModals: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Modals | Material Kit Pro
+          Browse: Modals | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

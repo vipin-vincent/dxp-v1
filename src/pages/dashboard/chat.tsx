@@ -105,7 +105,7 @@ const Chat: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Chat | Material Kit Pro
+          Dashboard: Chat | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

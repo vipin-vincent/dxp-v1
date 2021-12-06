@@ -35,7 +35,7 @@ const Account: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Account | Material Kit Pro
+          Dashboard: Account | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

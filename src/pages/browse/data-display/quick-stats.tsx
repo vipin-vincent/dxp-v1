@@ -24,7 +24,7 @@ const BrowseQuickStats: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Quick Stats | Material Kit Pro
+          Browse: Quick Stats | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

@@ -24,7 +24,7 @@ const BrowseDetailLists: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Detail Lists | Material Kit Pro
+          Browse: Detail Lists | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

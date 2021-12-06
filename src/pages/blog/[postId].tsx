@@ -99,7 +99,7 @@ const BlogPostDetails: NextPage = () => {
     <>
       <Head>
         <title>
-          Blog: Post Details | Material Kit Pro
+          Blog: Post Details | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

@@ -60,7 +60,7 @@ const Kanban: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Kanban | Material Kit Pro
+          Dashboard: Kanban | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

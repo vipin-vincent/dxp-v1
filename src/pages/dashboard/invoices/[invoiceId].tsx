@@ -63,7 +63,7 @@ const InvoiceDetails: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Invoice Details | Material Kit Pro
+          Dashboard: Invoice Details | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

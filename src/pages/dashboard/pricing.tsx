@@ -19,7 +19,7 @@ const Pricing: NextPage = () => {
     <>
       <Head>
         <title>
-          Pricing | Material Kit Pro
+          Pricing | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

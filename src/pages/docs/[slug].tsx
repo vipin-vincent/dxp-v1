@@ -59,7 +59,7 @@ const Article: NextPage<{ article?: Article; }> = (props) => {
     <>
       <Head>
         <title>
-          {`Docs: ${article.title} | Material Kit Pro`}
+          {`Docs: ${article.title} | DXP - Digital Experience Platform`}
         </title>
       </Head>
       <Container

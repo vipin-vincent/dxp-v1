@@ -61,7 +61,7 @@ const JobBrowse: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Job Browse | Material Kit Pro
+          Dashboard: Job Browse | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

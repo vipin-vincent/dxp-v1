@@ -96,7 +96,7 @@ const JobCreate: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Job Create | Material Kit Pro
+          Dashboard: Job Create | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

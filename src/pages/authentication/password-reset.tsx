@@ -31,7 +31,7 @@ const PasswordReset: NextPage = () => {
     <>
       <Head>
         <title>
-          Password Reset | Material Kit Pro
+          Password Reset | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

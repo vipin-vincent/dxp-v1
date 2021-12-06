@@ -139,7 +139,7 @@ const Browse: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse | Material Kit Pro
+          Browse | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

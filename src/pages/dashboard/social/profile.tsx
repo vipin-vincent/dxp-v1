@@ -84,7 +84,7 @@ export const SocialProfile: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Social Profile | Material Kit Pro
+          Dashboard: Social Profile | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

@@ -22,7 +22,7 @@ const BrowseGridLists: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Grid Lists | Material Kit Pro
+          Browse: Grid Lists | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

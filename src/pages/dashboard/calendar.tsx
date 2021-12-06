@@ -231,7 +231,7 @@ const Calendar: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Calendar | Material Kit Pro
+          Dashboard: Calendar | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

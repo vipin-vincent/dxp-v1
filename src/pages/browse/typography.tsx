@@ -16,7 +16,7 @@ export const BrowseTypography: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Typography | Material Kit Pro
+          Browse: Typography | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

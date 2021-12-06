@@ -34,7 +34,7 @@ const Login: NextPage = () => {
     <>
       <Head>
         <title>
-          Login | Material Kit Pro
+          Login | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

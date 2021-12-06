@@ -82,7 +82,7 @@ const CompanyDetails: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Company Details | Material Kit Pro
+          Dashboard: Company Details | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

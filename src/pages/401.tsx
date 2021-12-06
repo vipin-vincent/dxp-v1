@@ -18,7 +18,7 @@ const AuthorizationRequired: NextPage = () => {
     <>
       <Head>
         <title>
-          Error: Authorization Required | Material Kit Pro
+          Error: Authorization Required | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

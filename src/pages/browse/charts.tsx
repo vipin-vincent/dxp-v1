@@ -28,7 +28,7 @@ const BrowseCharts: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Charts | Material Kit Pro
+          Browse: Charts | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

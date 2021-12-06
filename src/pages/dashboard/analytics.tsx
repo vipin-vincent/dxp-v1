@@ -29,7 +29,7 @@ const Analytics: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Analytics | Material Kit Pro
+          Dashboard: Analytics | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

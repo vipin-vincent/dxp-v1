@@ -49,7 +49,7 @@ const App: FC<EnhancedAppProps> = (props) => {
     <CacheProvider value={emotionCache}>
       <Head>
         <title>
-          Material Kit Pro
+          DXP - Digital Experience Platform 
         </title>
         <meta
           name="viewport"

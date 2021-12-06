@@ -30,18 +30,14 @@ const sections = [
     ]
   },
   {
-    title: 'Placeholders',
+    title: 'Privacy Policy',
     links: [
       {
         title: 'Terms & Conditions',
         href: '#'
       },
       {
-        title: 'License',
-        href: '#'
-      },
-      {
-        title: 'Contact',
+        title: 'Policy',
         href: '#'
       }
     ]
@@ -101,7 +97,7 @@ export const Footer: FC = (props) => (
             sx={{ mt: 1 }}
             variant="caption"
           >
-            © 2021 Devias.
+            © 2021 Zero Pixels.
           </Typography>
         </Grid>
         {sections.map((section, index) => (
@@ -161,18 +157,7 @@ export const Footer: FC = (props) => (
           </Grid>
         ))}
       </Grid>
-      <Divider
-        sx={{
-          borderColor: (theme) => alpha(theme.palette.primary.contrastText, 0.12),
-          my: 6
-        }}
-      />
-      <Typography
-        color="textSecondary"
-        variant="caption"
-      >
-        All Rights Reserved.
-      </Typography>
+      
     </Container>
   </Box>
 );

@@ -155,7 +155,7 @@ export const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
             );
           })}
         </Box>
-        <Typography
+        {/* <Typography
           color="textSecondary"
           sx={{
             display: 'block',
@@ -165,8 +165,8 @@ export const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
           variant="overline"
         >
           Settings
-        </Typography>
-        <div>
+        </Typography> */}
+        {/* <div>
           <FormControlLabel
             control={(
               <Checkbox
@@ -186,8 +186,8 @@ export const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
               </Typography>
             )}
           />
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <FormControlLabel
             control={(
               <Checkbox
@@ -205,7 +205,7 @@ export const SettingsDrawer: FC<SettingsDrawerProps> = (props) => {
               </Typography>
             )}
           />
-        </div>
+        </div> */}
         <Button
           color="primary"
           fullWidth

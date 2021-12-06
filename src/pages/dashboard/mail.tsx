@@ -111,7 +111,7 @@ const Mail: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Mail | Material Kit Pro
+          Dashboard: Mail | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

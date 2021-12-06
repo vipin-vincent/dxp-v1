@@ -21,7 +21,7 @@ const BrowseInputs: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Inputs | Material Kit Pro
+          Browse: Inputs | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

@@ -52,7 +52,7 @@ export const OverviewBanner: FC<OverviewBannerProps> = (props) => {
           sx={{ mt: 2 }}
           variant="h4"
         >
-          Welcome to Material Kit Pro v5!
+          Welcome to DXP - Digital Experience Platform v5!
         </Typography>
         <Typography
           color="inherit"

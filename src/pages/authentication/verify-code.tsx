@@ -31,7 +31,7 @@ const VerifyCode: NextPage = () => {
     <>
       <Head>
         <title>
-          Verify Code | Material Kit Pro
+          Verify Code | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

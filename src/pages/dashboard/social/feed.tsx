@@ -43,7 +43,7 @@ const SocialFeed: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Social Feed | Material Kit Pro
+          Dashboard: Social Feed | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

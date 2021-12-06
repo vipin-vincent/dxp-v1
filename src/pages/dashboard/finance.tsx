@@ -24,7 +24,7 @@ const Finance: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Finance | Material Kit Pro
+          Dashboard: Finance | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

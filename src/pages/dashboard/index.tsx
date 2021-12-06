@@ -58,7 +58,7 @@ const Overview: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Overview | Material Kit Pro
+          Dashboard: Overview | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

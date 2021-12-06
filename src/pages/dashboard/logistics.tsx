@@ -22,7 +22,7 @@ const Logistics: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Logistics | Material Kit Pro
+          Dashboard: Logistics | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

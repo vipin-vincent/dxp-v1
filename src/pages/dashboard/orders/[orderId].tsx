@@ -54,7 +54,7 @@ const OrderDetails: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Order Details | Material Kit Pro
+          Dashboard: Order Details | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

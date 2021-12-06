@@ -34,7 +34,7 @@ const Register: NextPage = () => {
     <>
       <Head>
         <title>
-          Register | Material Kit Pro
+          Register | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

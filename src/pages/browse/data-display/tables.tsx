@@ -27,7 +27,7 @@ const BrowseTables: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Tables | Material Kit Pro
+          Browse: Tables | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

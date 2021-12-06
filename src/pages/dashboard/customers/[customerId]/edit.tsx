@@ -49,7 +49,7 @@ const CustomerEdit: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Customer Edit | Material Kit Pro
+          Dashboard: Customer Edit | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

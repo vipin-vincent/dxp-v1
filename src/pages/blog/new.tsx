@@ -40,7 +40,7 @@ const BlogPostCreate: NextPage = () => {
     <>
       <Head>
         <title>
-          Blog: Post Create | Material Kit Pro
+          Blog: Post Create | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

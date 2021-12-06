@@ -18,7 +18,7 @@ const ServerError: NextPage = () => {
     <>
       <Head>
         <title>
-          Error: Server Error | Material Kit Pro
+          Error: Server Error | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

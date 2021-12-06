@@ -17,7 +17,7 @@ const ProductCreate: NextPage = () => {
     <>
       <Head>
         <title>
-          Dashboard: Product Create | Material Kit Pro
+          Dashboard: Product Create | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

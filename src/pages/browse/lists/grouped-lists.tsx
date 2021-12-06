@@ -27,7 +27,7 @@ const BrowseGroupedLists: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Grouped Lists | Material Kit Pro
+          Browse: Grouped Lists | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

@@ -19,7 +19,7 @@ const BrowseButtons: NextPage = () => {
     <>
       <Head>
         <title>
-          Browse: Buttons | Material Kit Pro
+          Browse: Buttons | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

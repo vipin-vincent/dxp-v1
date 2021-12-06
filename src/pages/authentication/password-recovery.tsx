@@ -28,7 +28,7 @@ const PasswordRecovery: NextPage = () => {
     <>
       <Head>
         <title>
-          Password Recovery | Material Kit Pro
+          Password Recovery | DXP - Digital Experience Platform
         </title>
       </Head>
       <Box

@@ -40,7 +40,8 @@ export const MainNavbar: FC<MainNavbarProps> = (props) => {
                     xs: 'none'
                   },
                   height: 40,
-                  width: 40
+                  width: 40,
+                 marginTop: 1
                 }}
               />
             </a>
@@ -107,13 +108,12 @@ export const MainNavbar: FC<MainNavbarProps> = (props) => {
             </NextLink>
             <Button
               component="a"
-              href="https://material-ui.com/store/items/devias-kit-pro"
+              href="authentication/login"
               size="medium"
               sx={{ ml: 2 }}
-              target="_blank"
               variant="contained"
             >
-              Buy Now
+             Login
             </Button>
           </Box>
         </Toolbar>
