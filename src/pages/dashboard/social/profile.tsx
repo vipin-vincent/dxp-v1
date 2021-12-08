@@ -28,6 +28,7 @@ import { DotsHorizontal as DotsHorizontalIcon } from '../../../icons/dots-horizo
 import { UserAdd as UserAddIcon } from '../../../icons/user-add';
 import { gtm } from '../../../lib/gtm';
 import type { Profile } from '../../../types/social';
+import {useAuth} from '../../../hooks/use-auth'
 
 const tabs = [
   { label: 'Timeline', value: 'timeline' },
@@ -39,6 +40,7 @@ export const SocialProfile: NextPage = () => {
   const [currentTab, setCurrentTab] = useState<string>('timeline');
   const [profile, setProfile] = useState<Profile | null>(null);
   const [connectedStatus, setConnectedStatus] = useState<string>('not_connected');
+  const {user} = useAuth();
 
   useEffect(() => {
     gtm.push({ event: 'page_view' });
@@ -46,7 +48,13 @@ export const SocialProfile: NextPage = () => {
 
   const getProfile = useCallback(async () => {
     try {
+      
       const data = await socialApi.getProfile();
+      debugger;
+      data.id = user.id;
+      data.avatar = user.avatar;
+      data.email = user.email;
+      data.name = user.name;
 
       if (isMounted()) {
         setProfile(data);

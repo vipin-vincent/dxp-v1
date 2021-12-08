@@ -1,3 +1,4 @@
+import { useAuth } from './../hooks/use-auth';
 import { subDays, subHours, subMinutes } from 'date-fns';
 import type { Contact, Thread, Message, Participant } from '../types/chat';
 import { createResourceId } from '../utils/create-resource-id';
@@ -232,11 +233,12 @@ class ChatApi {
 
   getThreads(): Promise<Thread[]> {
     // On server get current identity (user) from the request
-    const user = {
-      id: '5e86809283e28b96d2d38537',
-      avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
-      name: 'Anika Visser'
-    };
+    const {user} = useAuth();
+    // const user = {
+    //   id: '5e86809283e28b96d2d38537',
+    //   avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
+    //   name: 'Anika Visser'
+    // };
 
     const expandedThreads = threads.map((thread) => {
       const participants: Participant[] = [user];
@@ -270,11 +272,12 @@ class ChatApi {
 
       try {
         // On server get current identity (user) from the request
-        const user = {
-          id: '5e86809283e28b96d2d38537',
-          avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
-          name: 'Anika Visser'
-        };
+        // const user = {
+        //   id: '5e86809283e28b96d2d38537',
+        //   avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
+        //   name: 'Anika Visser'
+        // };
+        const {user} = useAuth();
 
         let thread: Thread;
 
@@ -344,11 +347,12 @@ class ChatApi {
     return new Promise((resolve, reject) => {
       try {
         // On server get current identity (user) from the request
-        const user = {
-          id: '5e86809283e28b96d2d38537',
-          avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
-          name: 'Anika Visser'
-        };
+        const {user} = useAuth();
+        // const user = {
+        //   id: '5e86809283e28b96d2d38537',
+        //   avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
+        //   name: 'Anika Visser'
+        // };
 
         let participants: Participant[] = [user];
 
