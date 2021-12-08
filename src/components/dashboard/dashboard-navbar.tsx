@@ -38,22 +38,25 @@ const languages = {
 };
 
 const DashboardNavbarRoot = styled(AppBar)(
-  ({ theme }) => ({
-    backgroundColor: theme.palette.background.primary,
-    
-    ...(
-      theme.palette.mode === 'light'
-        ? {
-          boxShadow: theme.shadows[3]
+  ({ theme }) => (
+    {
+      ...(
+        theme.palette.mode === 'light' && {
+          backgroundColor: theme.palette.primary.main,
+          boxShadow: 'none',
+          color: theme.palette.primary.contrastText
         }
-        : {
-          borderBottomColor: theme.palette.divider,
-          borderBottomStyle: 'solid',
-          borderBottomWidth: 1,
+      ),
+      ...(
+        theme.palette.mode === 'dark' && {
+          backgroundColor: theme.palette.background.paper,
+          borderBottom: `1px solid ${theme.palette.divider}`,
           boxShadow: 'none'
         }
-    )
-  })
+      ),
+      zIndex: theme.zIndex.drawer + 100
+    }
+  )
 );
 
 const LanguageButton = () => {

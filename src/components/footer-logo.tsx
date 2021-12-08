@@ -60,7 +60,3 @@ export const Logo = styled((props: LogoProps) => {
 Logo.defaultProps = {
   variant: "primary",
 };
-
-Logo.propTypes = {
-  variant: PropTypes.oneOf(["light", "primary"]),
-};

@@ -49,7 +49,7 @@ const Login: NextPage = () => {
         }}
       >
         {/* <AuthBanner /> */}
-        <MainNavbar onOpenSidebar={(): void => setIsSidebarOpen(true)} />
+        <MainNavbar/>
         <Container
           maxWidth="sm"
           sx={{
