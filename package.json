@@ -1,7 +1,7 @@
 {
   "name": "dxp-v1",
   "version": "1.0.0",
-  "author": "Devias",
+  "author": "Zero Pixels",
   "private": true,
   "scripts": {
     "dev": "next",

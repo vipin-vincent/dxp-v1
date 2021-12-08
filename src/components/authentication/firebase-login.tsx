@@ -12,7 +12,7 @@ export const FirebaseLogin: FC = (props) => {
   const { signInWithEmailAndPassword, signInWithGoogle } = useAuth() as any;
   const formik = useFormik({
     initialValues: {
-      email: 'demo@devias.io',
+      email: 'user@zp.com',
       password: 'Password123!',
       submit: null
     },
@@ -151,7 +151,7 @@ export const FirebaseLogin: FC = (props) => {
             <div>
               You can use
               {' '}
-              <b>demo@devias.io</b>
+              <b>user@zp.com</b>
               {' '}
               and password
               {' '}

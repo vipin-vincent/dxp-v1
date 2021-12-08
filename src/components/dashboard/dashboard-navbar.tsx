@@ -40,6 +40,7 @@ const languages = {
 const DashboardNavbarRoot = styled(AppBar)(
   ({ theme }) => ({
     backgroundColor: theme.palette.background.primary,
+    
     ...(
       theme.palette.mode === 'light'
         ? {

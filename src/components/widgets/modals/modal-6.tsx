@@ -29,13 +29,13 @@ export const Modal6: FC = () => (
     >
       <Box sx={{ p: 2 }}>
         <Typography variant="subtitle2">
-          demo@devias.io
+          user@zp.com
         </Typography>
         <Typography
           color="textSecondary"
           variant="subtitle2"
         >
-          Devias
+          Zero Pixels
         </Typography>
       </Box>
       <Divider />

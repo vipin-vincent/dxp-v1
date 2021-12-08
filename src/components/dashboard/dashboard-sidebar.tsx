@@ -474,7 +474,9 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
         open
         PaperProps={{
           sx: {
-            backgroundColor: '#ffffff',
+            backgroundColor: (theme) => theme.palette.mode === 'dark'
+                ? 'neutral.900'
+                : '#fff',
             borderRightColor: 'divider',
             borderRightStyle: 'solid',
             borderRightWidth: (theme) => theme.palette.mode === 'dark' ? 1 : 0,

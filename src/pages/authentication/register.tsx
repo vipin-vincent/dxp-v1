@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { Box, Card, Container, Divider, Link, Typography } from '@mui/material';
 import { GuestGuard } from '../../components/authentication/guest-guard';
-import { AuthBanner } from '../../components/authentication/auth-banner';
+// import { AuthBanner } from '../../components/authentication/auth-banner';
 import { AmplifyRegister } from '../../components/authentication/amplify-register';
 import { Auth0Register } from '../../components/authentication/auth0-register';
 import { FirebaseRegister } from '../../components/authentication/firebase-register';
@@ -13,6 +13,8 @@ import { JWTRegister } from '../../components/authentication/jwt-register';
 import { Logo } from '../../components/logo';
 import { useAuth } from '../../hooks/use-auth';
 import { gtm } from '../../lib/gtm';
+import { MainNavbar } from '../../components/auth-navbar';
+import { Footer } from '../../components/footer';
 
 const platformIcons = {
   Amplify: '/static/icons/amplify.svg',
@@ -40,13 +42,14 @@ const Register: NextPage = () => {
       <Box
         component="main"
         sx={{
-          backgroundColor: 'background.default',
+          backgroundColor: 'background.paper',
           display: 'flex',
           flexDirection: 'column',
           minHeight: '100vh'
         }}
       >
-        <AuthBanner />
+         {/* <AuthBanner /> */}
+        <MainNavbar onOpenSidebar={(): void => setIsSidebarOpen(true)} />
         <Container
           maxWidth="sm"
           sx={{
@@ -156,6 +159,7 @@ const Register: NextPage = () => {
           </Card>
         </Container>
       </Box>
+      <Footer />
     </>
   );
 };

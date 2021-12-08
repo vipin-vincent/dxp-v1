@@ -5,11 +5,13 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { Box, Card, Container, Divider, Link, Typography } from '@mui/material';
 import { GuestGuard } from '../../components/authentication/guest-guard';
-import { AuthBanner } from '../../components/authentication/auth-banner';
+// import { AuthBanner } from '../../components/authentication/auth-banner';
 import { AmplifyVerifyCode } from '../../components/authentication/amplify-verify-code';
 import { Logo } from '../../components/logo';
 import { useAuth } from '../../hooks/use-auth';
 import { gtm } from '../../lib/gtm';
+import { MainNavbar } from '../../components/auth-navbar';
+import { Footer } from '../../components/footer';
 
 const platformIcons = {
   Amplify: '/static/icons/amplify.svg',
@@ -37,13 +39,14 @@ const VerifyCode: NextPage = () => {
       <Box
         component="main"
         sx={{
-          backgroundColor: 'background.default',
+          backgroundColor: 'background.paper',
           display: 'flex',
           flexDirection: 'column',
           minHeight: '100vh'
         }}
       >
-        <AuthBanner />
+         {/* <AuthBanner /> */}
+        <MainNavbar onOpenSidebar={(): void => setIsSidebarOpen(true)} />
         <Container
           maxWidth="sm"
           sx={{
@@ -152,6 +155,7 @@ const VerifyCode: NextPage = () => {
           </Card>
         </Container>
       </Box>
+      <Footer />
     </>
   );
 };
