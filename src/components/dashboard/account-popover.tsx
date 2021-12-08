@@ -30,11 +30,11 @@ export const AccountPopover: FC<AccountPopoverProps> = (props) => {
   const router = useRouter();
   const { logout } = useAuth();
   // To get the user from the authContext, you can use
-  // `const { user } = useAuth();`
-  const user = {
-    avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
-    name: 'Anika Visser'
-  };
+  const { user } = useAuth();
+  // const user = {
+  //   avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
+  //   name: 'Anika Visser'
+  // };
 
   const handleLogout = async (): Promise<void> => {
     try {

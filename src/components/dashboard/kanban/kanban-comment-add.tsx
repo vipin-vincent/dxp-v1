@@ -5,6 +5,7 @@ import toast from 'react-hot-toast';
 import { Avatar, Box, TextField } from '@mui/material';
 import { addComment } from '../../../slices/kanban';
 import { useDispatch } from '../../../store';
+import {useAuth} from '../../../hooks/use-auth'
 
 interface KanbanCommentAddProps {
   cardId: string;
@@ -14,10 +15,10 @@ export const KanbanCommentAdd: FC<KanbanCommentAddProps> = (props) => {
   const { cardId, ...other } = props;
   const dispatch = useDispatch();
   // To get the user from the authContext, you can use
-  // `const { user } = useAuth();`
-  const user = {
-    avatar: '/static/mock-images/avatars/avatar-anika_visser.png'
-  };
+  const { user } = useAuth();
+  // const user = {
+  //   avatar: '/static/mock-images/avatars/avatar-anika_visser.png'
+  // };
   const [message, setMessage] = useState<string>('');
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>): void => {

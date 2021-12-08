@@ -12,6 +12,7 @@ import {
 import { styled } from '@mui/material/styles';
 import AddPhotoIcon from '@mui/icons-material/AddPhotoAlternate';
 import AttachFileIcon from '@mui/icons-material/AttachFile';
+import { useAuth } from '../../../hooks/use-auth';
 
 const MailReplyTextarea = styled(TextareaAutosize)(
   ({ theme }) => ({
@@ -34,11 +35,11 @@ export const MailReply: FC = (props) => {
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [value, setValue] = useState<string>('');
   // To get the user from the authContext, you can use
-  // `const { user } = useAuth();`
-  const user = {
-    avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
-    name: 'Anika Visser'
-  };
+  const { user } = useAuth();
+  // const user = {
+  //   avatar: '/static/mock-images/avatars/avatar-anika_visser.png',
+  //   name: 'Anika Visser'
+  // };
 
   const handleChange = (event: ChangeEvent<HTMLTextAreaElement>): void => {
     setValue(event.target.value);

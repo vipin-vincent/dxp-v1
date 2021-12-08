@@ -2,13 +2,15 @@ import type { User } from "../types/user";
 import { createResourceId } from "../utils/create-resource-id";
 import { sign, decode, JWT_SECRET, JWT_EXPIRES_IN } from "../utils/jwt";
 import { wait } from "../utils/wait";
+import {useAuth} from "../hooks/use-auth"
 
+const {user} = useAuth();
 const users = [
   {
-    id: "5e86809283e28b96d2d38537",
-    avatar: "/static/mock-images/avatars/avatar-anika_visser.png",
-    email: "user@zp.com",
-    name: "Anika Visser",
+    id: user.id,
+    avatar: user.avatar,
+    email: user.email,
+    name: user.name,
     password: "Password123!",
     plan: "Premium",
   },
