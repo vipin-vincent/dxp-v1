@@ -45,7 +45,7 @@ const customers = [
   'ACME SRL',
   'Novelty I.S',
   'Beauty Clinic SRL',
-  'Division Inc.'
+  'Lilypad.'
 ];
 
 const FiltersDrawerDesktop = styled(Drawer)({

@@ -2,13 +2,13 @@ import PropTypes from "prop-types";
 import { styled } from "@mui/material/styles";
 
 interface LogoProps {
-  variant?: "light" | "primary";
+  variant?: "dark" | "primary";
 }
 
 export const Logo = styled((props: LogoProps) => {
   const { variant, ...other } = props;
 
-  const color = variant === "light" ? "#ffffff" : "#ffffff";
+  const color = variant === "dark" ? "#ffffff" : "#002a4c";
 
   return (
     <svg

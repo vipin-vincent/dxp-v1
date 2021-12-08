@@ -2,6 +2,7 @@ import { useRef, useState } from 'react';
 import type { FC } from 'react';
 import PropTypes from 'prop-types';
 import { useTranslation } from 'react-i18next';
+import NextLink from "next/link";
 import {
   AppBar,
   Avatar,
@@ -24,6 +25,7 @@ import { Bell as BellIcon } from '../../icons/bell';
 import { UserCircle as UserCircleIcon } from '../../icons/user-circle';
 import { Search as SearchIcon } from '../../icons/search';
 import { Users as UsersIcon } from '../../icons/users';
+import { Logo } from "../logo";
 
 interface DashboardNavbarProps extends AppBarProps {
   onOpenSidebar?: () => void;
@@ -37,14 +39,13 @@ const languages = {
 
 const DashboardNavbarRoot = styled(AppBar)(
   ({ theme }) => ({
-    backgroundColor: theme.palette.background.paper,
+    backgroundColor: theme.palette.background.primary,
     ...(
       theme.palette.mode === 'light'
         ? {
           boxShadow: theme.shadows[3]
         }
         : {
-          backgroundColor: theme.palette.background.paper,
           borderBottomColor: theme.palette.divider,
           borderBottomStyle: 'solid',
           borderBottomWidth: 1,
@@ -262,10 +263,10 @@ export const DashboardNavbar: FC<DashboardNavbarProps> = (props) => {
       <DashboardNavbarRoot
         sx={{
           left: {
-            lg: 280
+            lg: 0
           },
           width: {
-            lg: 'calc(100% - 280px)'
+            lg: 'calc(100%)'
           }
         }}
         {...other}
@@ -278,6 +279,21 @@ export const DashboardNavbar: FC<DashboardNavbarProps> = (props) => {
             px: 2
           }}
         >
+          <NextLink href="/" passHref>
+            <a>
+              <Logo
+                sx={{
+                  display: {
+                    md: "inline",
+                    xs: "none",
+                  },
+                  height: 52,
+                  width: 45,
+                  marginTop: 1,
+                }}
+              />
+            </a>
+          </NextLink>
           <IconButton
             onClick={onOpenSidebar}
             sx={{
@@ -290,7 +306,7 @@ export const DashboardNavbar: FC<DashboardNavbarProps> = (props) => {
             <MenuIcon fontSize="small" />
           </IconButton>
           <Box sx={{ flexGrow: 1 }} />
-          <LanguageButton />
+          {/* <LanguageButton /> */}
           <ContentSearchButton />
           <ContactsButton />
           <NotificationsButton />

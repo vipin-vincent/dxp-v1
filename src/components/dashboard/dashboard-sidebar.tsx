@@ -347,6 +347,7 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
     <>
       <Scrollbar
         sx={{
+          Top:6,
           height: '100%',
           '& .simplebar-content': {
             height: '100%'
@@ -361,22 +362,7 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
           }}
         >
           <div>
-            <Box sx={{ p: 3 }}>
-              <NextLink
-                href="/"
-                passHref
-              >
-                <a>
-                  <Logo
-                    sx={{
-                      height: 42,
-                      width: 42
-                    }}
-                  />
-                </a>
-              </NextLink>
-            </Box>
-            <Box sx={{ px: 2 }}>
+            <Box sx={{ px: 2, mt: 10 }}>
               <Box
                 onClick={handleOpenOrganizationsPopover}
                 ref={organizationsRef}
@@ -396,10 +382,10 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
                     color="inherit"
                     variant="subtitle1"
                   >
-                    Acme Inc
+                    Zero Pixels
                   </Typography>
                   <Typography
-                    color="neutral.400"
+                    color="neutral.600"
                     variant="body2"
                   >
                     {t('Your tier')}
@@ -409,7 +395,7 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
                 </div>
                 <SelectorIcon
                   sx={{
-                    color: 'neutral.500',
+                    color: 'neutral.900',
                     width: 14,
                     height: 14
                   }}
@@ -419,7 +405,7 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
           </div>
           <Divider
             sx={{
-              borderColor: '#2D3748', // dark divider
+              borderColor: '#abafb5', // dark divider
               my: 3
             }}
           />
@@ -440,18 +426,18 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
           </Box>
           <Divider
             sx={{
-              borderColor: '#2D3748'  // dark divider
+              borderColor: '#abafb5'  // dark divider
             }}
           />
-          <Box sx={{ p: 2 }}>
+          <Box sx={{ p: 3 }}>
             <Typography
-              color="neutral.100"
+              color="main.primary"
               variant="subtitle2"
             >
               {t('Need Help?')}
             </Typography>
             <Typography
-              color="neutral.500"
+              color="main.primary"
               variant="body2"
             >
               {t('Check our docs')}
@@ -464,7 +450,7 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
                 color="secondary"
                 component="a"
                 fullWidth
-                sx={{ mt: 2 }}
+                sx={{ mt: 2}}
                 variant="contained"
               >
                 {t('Documentation')}
@@ -488,11 +474,11 @@ export const DashboardSidebar: FC<DashboardSidebarProps> = (props) => {
         open
         PaperProps={{
           sx: {
-            backgroundColor: 'neutral.900',
+            backgroundColor: '#ffffff',
             borderRightColor: 'divider',
             borderRightStyle: 'solid',
             borderRightWidth: (theme) => theme.palette.mode === 'dark' ? 1 : 0,
-            color: '#FFFFFF',
+            color: '#002a4c',
             width: 280
           }
         }}

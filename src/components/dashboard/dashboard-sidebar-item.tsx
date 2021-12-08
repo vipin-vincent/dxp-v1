@@ -67,7 +67,7 @@ export const DashboardSidebarItem: FC<DashboardSidebarItemProps> = (props) => {
           onClick={handleToggle}
           startIcon={icon}
           sx={{
-            color: active ? 'secondary.main' : 'neutral.300',
+            color: active ? 'secondary.main' : 'neutral.700',
             justifyContent: 'flex-start',
             pl: `${paddingLeft}px`,
             pr: 3,
@@ -75,13 +75,14 @@ export const DashboardSidebarItem: FC<DashboardSidebarItemProps> = (props) => {
             textTransform: 'none',
             width: '100%',
             '&:hover': {
-              backgroundColor: 'rgba(255,255,255, 0.08)'
+              backgroundColor: 'rgba(255,255,255, 0.08)',
+              color: 'secondary.main'
             },
             '& .MuiButton-startIcon': {
-              color: active ? 'secondary.main' : 'neutral.400'
+              color: active ? 'secondary.main' : 'neutral.600'
             },
             '& .MuiButton-endIcon': {
-              color: 'neutral.400'
+              color: 'neutral.600'
             }
           }}
         >
@@ -123,8 +124,8 @@ export const DashboardSidebarItem: FC<DashboardSidebarItemProps> = (props) => {
           sx={{
             backgroundColor: active && 'rgba(255,255,255, 0.08)',
             borderRadius: 1,
-            color: active ? 'secondary.main' : 'neutral.300',
-            fontWeight: active && 'fontWeightBold',
+            color: active ? 'primary.main' : 'neutral.700',
+            fontWeight: active && '700',
             justifyContent: 'flex-start',
             pl: `${paddingLeft}px`,
             pr: 3,
@@ -132,10 +133,11 @@ export const DashboardSidebarItem: FC<DashboardSidebarItemProps> = (props) => {
             textTransform: 'none',
             width: '100%',
             '& .MuiButton-startIcon': {
-              color: active ? 'secondary.main' : 'neutral.400'
+              color: active ? 'primary.main' : 'neutral.600'
             },
             '&:hover': {
-              backgroundColor: 'rgba(255,255,255, 0.08)'
+              backgroundColor: 'rgba(255,255,255, 0.08)',
+              color: 'secondary.main'
             }
           }}
         >

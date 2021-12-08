@@ -104,9 +104,9 @@ export const DashboardSidebarSection: FC<DashboardSidebarSectionProps> = (props)
           disableGutters
           disableSticky
           sx={{
-            color: 'neutral.500',
+            color: 'neutral.900',
             fontSize: '0.75rem',
-            fontWeight: 700,
+            fontWeight: 400,
             lineHeight: 2.5,
             ml: 4,
             textTransform: 'uppercase'

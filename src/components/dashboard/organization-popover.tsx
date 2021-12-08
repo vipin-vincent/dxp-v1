@@ -8,8 +8,8 @@ interface OrganizationPopoverProps {
 }
 
 const organizations = [
-  'Acme Inc',
-  'Division Inc'
+  'Zero Pixels',
+  'Lilypad'
 ];
 
 export const OrganizationPopover: FC<OrganizationPopoverProps> = (props) => {

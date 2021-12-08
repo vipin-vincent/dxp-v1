@@ -1,9 +1,17 @@
-import type { FC } from 'react';
-import PropTypes from 'prop-types';
-import NextLink from 'next/link';
-import { AppBar, Box, Button, Container, IconButton, Link, Toolbar } from '@mui/material';
-import { Menu as MenuIcon } from '../icons/menu';
-import { Logo } from './logo';
+import type { FC } from "react";
+import PropTypes from "prop-types";
+import NextLink from "next/link";
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  IconButton,
+  Link,
+  Toolbar,
+} from "@mui/material";
+import { Menu as MenuIcon } from "../icons/menu";
+import { Logo } from "./logo";
 
 interface MainNavbarProps {
   onOpenSidebar?: () => void;
@@ -16,32 +24,26 @@ export const MainNavbar: FC<MainNavbarProps> = (props) => {
     <AppBar
       elevation={0}
       sx={{
-        backgroundColor: 'background.paper',
-        borderBottomColor: 'divider',
-        borderBottomStyle: 'solid',
+        backgroundColor: "background.primary",
+        borderBottomColor: "divider",
+        borderBottomStyle: "solid",
         borderBottomWidth: 1,
-        color: 'text.secondary'
+        color: "text.secondary",
       }}
     >
       <Container maxWidth="lg">
-        <Toolbar
-          disableGutters
-          sx={{ minHeight: 64 }}
-        >
-          <NextLink
-            href="/"
-            passHref
-          >
+        <Toolbar disableGutters sx={{ minHeight: 64 }}>
+          <NextLink href="/" passHref>
             <a>
               <Logo
                 sx={{
                   display: {
-                    md: 'inline',
-                    xs: 'none'
+                    md: "inline",
+                    xs: "none",
                   },
-                  height: 40,
-                  width: 40,
-                 marginTop: 1
+                  height: 52,
+                  width: 45,
+                  marginTop: 1,
                 }}
               />
             </a>
@@ -52,39 +54,29 @@ export const MainNavbar: FC<MainNavbarProps> = (props) => {
             onClick={onOpenSidebar}
             sx={{
               display: {
-                md: 'none'
-              }
+                md: "none",
+              },
             }}
           >
             <MenuIcon fontSize="small" />
           </IconButton>
           <Box
             sx={{
-              alignItems: 'center',
+              alignItems: "center",
               display: {
-                md: 'flex',
-                xs: 'none'
-              }
+                md: "flex",
+                xs: "none",
+              },
             }}
           >
-            <NextLink
-              href="/dashboard"
-              passHref
-            >
-              <Link
-                color="textSecondary"
-                underline="none"
-                variant="subtitle2"
-              >
+            <NextLink href="/dashboard" passHref>
+              <Link color="white" underline="none" variant="subtitle2">
                 Live Demo
               </Link>
             </NextLink>
-            <NextLink
-              href="/browse"
-              passHref
-            >
+            <NextLink href="/browse" passHref>
               <Link
-                color="textSecondary"
+                color="white"
                 sx={{ ml: 2 }}
                 underline="none"
                 variant="subtitle2"
@@ -92,12 +84,9 @@ export const MainNavbar: FC<MainNavbarProps> = (props) => {
                 Components
               </Link>
             </NextLink>
-            <NextLink
-              href="/docs/welcome"
-              passHref
-            >
+            <NextLink href="/docs/welcome" passHref>
               <Link
-                color="textSecondary"
+                color="white"
                 component="a"
                 sx={{ ml: 2 }}
                 underline="none"
@@ -107,13 +96,16 @@ export const MainNavbar: FC<MainNavbarProps> = (props) => {
               </Link>
             </NextLink>
             <Button
+              color="info"
               component="a"
               href="authentication/login"
               size="medium"
-              sx={{ ml: 2 }}
+              sx={{
+                ml: 2,
+              }}
               variant="contained"
             >
-             Login
+              Login
             </Button>
           </Box>
         </Toolbar>
@@ -123,5 +115,5 @@ export const MainNavbar: FC<MainNavbarProps> = (props) => {
 };
 
 MainNavbar.propTypes = {
-  onOpenSidebar: PropTypes.func
+  onOpenSidebar: PropTypes.func,
 };

@@ -89,7 +89,7 @@ export const AccountPopover: FC<AccountPopoverProps> = (props) => {
             color="textSecondary"
             variant="body2"
           >
-            Acme Inc
+            Zero Pixels
           </Typography>
         </Box>
       </Box>

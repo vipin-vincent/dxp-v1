@@ -13,7 +13,7 @@ import {
 } from '@mui/material';
 import { alpha } from '@mui/material/styles';
 import { MinusOutlined as MinusOutlinedIcon } from '../icons/minus-outlined';
-import { Logo } from './logo';
+import { Logo } from './footer-logo';
 
 const sections = [
   {
@@ -66,7 +66,7 @@ export const Footer: FC = (props) => (
       borderTopWidth: 1,
       pb: 6,
       pt: {
-        md: 15,
+        md: 6,
         xs: 6
       }
     }}
@@ -93,7 +93,7 @@ export const Footer: FC = (props) => (
         >
           <Logo />
           <Typography
-            color="textSecondary"
+            color={"textPrimary"}
             sx={{ mt: 1 }}
             variant="caption"
           >
